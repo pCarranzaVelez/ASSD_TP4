@@ -17,6 +17,20 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.openbtn = QtWidgets.QPushButton(self.centralwidget)
+        self.openbtn.setGeometry(QtCore.QRect(10, 10, 81, 31))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(12)
+        self.openbtn.setFont(font)
+        self.openbtn.setObjectName("openbtn")
+        self.beginbtn = QtWidgets.QPushButton(self.centralwidget)
+        self.beginbtn.setGeometry(QtCore.QRect(110, 10, 81, 31))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(12)
+        self.beginbtn.setFont(font)
+        self.beginbtn.setObjectName("beginbtn")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
@@ -32,6 +46,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.openbtn.setText(_translate("MainWindow", "Open"))
+        self.beginbtn.setText(_translate("MainWindow", "Begin"))
 
 
 if __name__ == "__main__":

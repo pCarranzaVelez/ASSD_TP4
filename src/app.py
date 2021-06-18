@@ -1,3 +1,9 @@
+# PyQt5 modules
+from PyQt5 import QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QPalette, QColor
+# Python modules
+import sys
 # Main window ui import
 from src.mainwindow import MainWindow
 
